@@ -1,9 +1,10 @@
 *{box-sizing: border-box;}
-body{margin: 0;}
+body{margin: 0;
+}
 
 h1,h2,h3{font-family: Arvo, sans-serif;}
 
-.item {padding:20px 40px;}
+.item {padding:20px 40px ;}
 
 a{text-decoration: none;}
 
@@ -31,6 +32,7 @@ a{text-decoration: none;}
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 0;
 
 }
 
@@ -43,7 +45,7 @@ letter-spacing: 2px;
     color: #9fa3a7;
 }
 
-.child1 image{width:35%}
+/* .child1 image{position: relative;top:250px;} */
 
 .child1 img{width:100%}
 
@@ -66,6 +68,7 @@ letter-spacing: 2px;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding-bottom: 0;
 }
 
 
@@ -80,14 +83,18 @@ letter-spacing: 2px;
     font-weight: 400;}
 
 
-
+.child2 a {color:#27b9c2;
+text-decoration: underline;
+}
     /* child2 end */
 
 
 
     /* child3 startt */
 
-    .child3{
+.child3  
+{
+    margin-top: 0;
     grid-area: ch3;
     background-color:#f05638;
     display: flex;
@@ -128,8 +135,10 @@ letter-spacing: 2px;
 {
         grid-area: ch4;
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        background-color: #7bc424;
 }
 
 
@@ -140,7 +149,7 @@ letter-spacing: 2px;
 }
 
 .child4 .lft p{color: #464747;}
-.child4 .imag 
+.child4 .image 
 {
     width:300px;
 }
@@ -148,7 +157,7 @@ letter-spacing: 2px;
 .child4 img 
 {
     width:100%;
-    transform: translateX(-180px);
+    transform: translateX(-150px);
 }
 
 .child4 .right p
@@ -306,12 +315,15 @@ letter-spacing: 2px;}
 
     .child7 .image {
         position: relative;
-
-        top:25px;
+        top:24px;
         left: -10px;
+        width:600px;
     }
 
-    .child7 img {width:100%;}
+    .child7 img 
+    {
+        width:100%;
+    }
     /* child7 enddddd */
 
 
@@ -388,7 +400,7 @@ border-radius: 50%;}
     grid-area: ch10;
     display: flex;
     color: #f7f8f9;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color:#2c2c2c;
 }
